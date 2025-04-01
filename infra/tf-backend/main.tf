@@ -14,7 +14,7 @@ provider "azurerm" {
 
 resource "azurerm_resource_group" "rg" {
   name     = "ertu0002-githubactions-rg"
-  location = "Canada Central"
+  location = "canadacentral"
 }
 
 resource "azurerm_storage_account" "sa" {
@@ -28,7 +28,7 @@ resource "azurerm_storage_account" "sa" {
 
 resource "azurerm_storage_container" "tfstate" {
   name                  = "tfstate"
-  storage_account_name  = azurerm_storage_account.sa.name
+  storage_account_id = azurerm_storage_account.sa.id
   container_access_type = "private"
 }
 
