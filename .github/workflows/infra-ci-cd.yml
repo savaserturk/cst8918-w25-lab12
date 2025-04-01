@@ -105,7 +105,6 @@ jobs:
       with:
         name: tfplan
         path: tfplan
-        retention-days: 1
         
     # Create string output of Terraform Plan
     - name: Create String Output
@@ -168,11 +167,9 @@ jobs:
     - name: Terraform Init
       run: terraform init
 
-    # Terraform Plan 
-    - name: Download Terraform Plan
-      uses: actions/download-artifact@v4
-      with:
-        name: tfplan
+    # Re-run Terraform Plan and Apply inline
+    - name: Terraform Plan
+      run: terraform plan -out=tfplan
 
     # Terraform Apply
     - name: Terraform Apply
