@@ -10,7 +10,7 @@
 ## Screenshots
 
 ### Workflow
-![Workflow](screenshots/pr-tf-plan.png)
+![Workflow](screenshots/pr-checks.png)
 
 ### Terraform Plan
 ![Terraform Plan](screenshots/pr-tf-plan.png)
