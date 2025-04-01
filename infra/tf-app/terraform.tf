@@ -6,7 +6,8 @@ terraform {
       version = "~> 3.0"
     }
   }
-   backend "azurerm" {
+
+  backend "azurerm" {
     resource_group_name  = "ertu0002-githubactions-rg"
     storage_account_name = "ertu0002githubactions"
     container_name       = "tfstate"
@@ -14,7 +15,6 @@ terraform {
     use_oidc             = true
   }
 }
-
 
 provider "azurerm" {
   features {}
