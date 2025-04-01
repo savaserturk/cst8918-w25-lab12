@@ -169,7 +169,7 @@ jobs:
       run: terraform init
 
     # Terraform Plan 
-    - name: Terraform Plan
+    - name: Download Terraform Plan
       uses: actions/download-artifact@v4
       with:
         name: tfplan
