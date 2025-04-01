@@ -13,4 +13,4 @@
 ![Workflow](screenshots/pr-tf-plan.png)
 
 ### Terraform Plan
-![Terraform Plan](screenshots/pr-tf-plan.png.png)
+![Terraform Plan](screenshots/pr-tf-plan.png)
